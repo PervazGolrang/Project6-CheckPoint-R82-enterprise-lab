@@ -1,14 +1,14 @@
 # Project 6 - Check Point R82 Enterprise Security Architecture
 
-This repository features a multi-ASN and multi-site VPN topology built in CML 2.9.0, focusing on Check Point **R82.00** and **R81.20**. Demonstrating ClusterXL HA, centralized management with SMS and SmartConsole, Zero Trust segmentation, and roting with OSPF and BGP. 
+This repository features a multi-ASN and multi-site VPN topology built in CML 2.9.0, focusing on Check Point **R82.00** and **R81.20**. Demonstrating ClusterXL HA, centralized management with SMS and SmartConsole, Zero Trust segmentation, and roting with OSPF and BGP.
 
 ---
 
-## About this lab
+## What this lab does
 
 This lab simulates a multi-site enterprise security infrastructure, using Check Point R82 and R82.10 Quantum Security Gateways:
 
-- **ClusterXL High Availability** - Active/Standby clustering with state synchronization
+- **ClusterXL High Availability** - Active/Standby clustering with bonded sync (eth2/3/4)
 - **Centralized Management** - Security Management Server (SMS) with SmartConsole administration
 - **VPN Communities** - Star topology hub-and-spoke site-to-site VPN
 - **Multi-Layer Security Policy** - Threat Prevention + Access Control with policy layers
@@ -33,7 +33,7 @@ This lab simulates a multi-site enterprise security infrastructure, using Check 
 | Security Gateway | GAiA R82, GAiA R81.20 |
 | vIOS             | 15.9(3) M10           | 
 | Desktop          | Alpine Linux 3.21.3   | 
-| Tacacs Plus      | F4.0.4.28             |
+| Cisco ISE        | ISE 3.4.0             |
 
 ## Lab Requirements
 
@@ -77,9 +77,11 @@ Refer to [notes.md](/notes.md) to tune and enable KSM on CML. It would take up t
 
 ## Notes
 
-This lab builds on previoux experience from **Project 5** (Fortinet Multi-ASN), where I hit an evaluation license which limits at 3 firewall policies on the hub. Project 6 demonstrates a full Check Point capabilities without restriction due to R82's 15-day evaluation license.
+This lab builds on my previous experience from **Project 5** (Fortinet Multi-ASN), where I hit an evaluation icense limit at 3 firewall policies on the hub. Project 6 will demonstrate full Check Point capabilities without those strict restrictions.
 
-The focus of the lab is on **entperise security best practices** using Check Point - logging strategy, policy organization, and Zero Trust. The routing complexity (OSPF + BGP) is intentional to widen my knowledge in dynamic routing protocls integrated with Check Point.
+The focus of this lab is on **enteprise security best practices**, with proper logging atrategy, policy organization, Zero Trust principles, and production-ready architecture. The asymmetric design (OSLO w/ VPN backup, Bergen w/o) is to demonstrate a real-world budget constraint and risk-based decision making.
+
+The routing complexity (OSPF + BGP) is intentional to widen my knowledge in dynamic routing protocls integrated with Check Point.
 
 ---
 
