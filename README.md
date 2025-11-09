@@ -1,6 +1,6 @@
 # Project 6 - Check Point R82 Enterprise Security Architecture
 
-This repository features a multi-ASN and multi-site VPN topology built in CML 2.9.0, focusing on Check Point **R82.00** and **R81.20**. Demonstrating ClusterXL HA, centralized management with SMS and SmartConsole, Zero Trust segmentation, and roting with OSPF and BGP.
+This repository features a multi-ASN and multi-site VPN topology built in CML 2.9.0, focusing on Check Point **R82** and **R81.20**. Demonstrating ClusterXL HA, centralized management with SMS and SmartConsole, Zero Trust segmentation, and roting with OSPF and BGP.
 
 ---
 
@@ -79,7 +79,7 @@ This lab builds on my previous experience from **Project 5** (Fortinet Multi-ASN
 
 The focus of this lab is on **enteprise security best practices**, with proper logging atrategy, policy organization, Zero Trust principles, and production-ready architecture. The asymmetric design (OSLO w/ VPN backup, Bergen w/o) is to demonstrate a real-world budget constraint and risk-based decision making.
 
-The routing complexity (OSPF + BGP) is intentional to widen my knowledge in dynamic routing protocls integrated with Check Point.
+The routing complexity (OSPF + BGP) is intentional to widen my knowledge in dynamic routing protocols integrated with Check Point.
 
 ---
 
