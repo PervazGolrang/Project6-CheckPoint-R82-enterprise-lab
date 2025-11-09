@@ -22,6 +22,8 @@ This lab simulates a multi-site enterprise security infrastructure, using Check 
 ## Network Topology
 
 ![Network Topology](topology/project6_checkpoint-r82-ent-topology.png)
+[Network Topology with IP Schema](topology/project6_checkpoint-r82-ent-topology_w-IP_Schema.png)
+
 
 ---
 
