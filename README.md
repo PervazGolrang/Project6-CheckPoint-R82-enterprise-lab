@@ -54,9 +54,7 @@ Refer to [notes.md](/notes.md) to tune and enable KSM on CML. It would take up t
 ├── configs/                        # Device-specific startup configs
 ├── docs/                           # Network design documentation
 │   ├── IPv4_Plan.md
-│   ├── ASN_Plan.md
-│   ├── Logging_Strategy.md         # Log vs Detailed vs Extended
-│   └── ClusterXL_Design.md
+│   └── ASN_Plan.md
 ├── steps/                          # Step-by-step implementation guides
 │   ├── 01_SMS_Setup.md
 │   ├── 02_Gateway_Deployment.md
